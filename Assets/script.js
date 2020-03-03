@@ -28,8 +28,8 @@ function pageLoad(){
 }
 
 function saveBtn(event){
-    addToLocalStorage( moment().format("YYYY-MM-DD"),  (event.target.id).substring(4), document.getElementById(`txt_${(event.target.id).substring(4)}`).value );
-    workListArr = fetchFromLocalStorage(moment().format("YYYY-MM-DD"), (event.target.id).split("_")[1]);
+    addToLocalStorage( moment().format("YYYY-MM-DD"),  (event.currentTarget.id).substring(4), document.getElementById(`txt_${(event.currentTarget.id).substring(4)}`).value );
+    workListArr = fetchFromLocalStorage(moment().format("YYYY-MM-DD"), (event.currentTarget.id).split("_")[1]);
 }
 
 function addToLocalStorage(name, key, value) {

@@ -1,0 +1,86 @@
+/* === RESPONSIVE DESIGN*/
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+html, body {
+	height:100%;
+}
+
+#s1 {
+
+	min-height:10%;
+	height:auto;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#s1 hgroup {
+	background: white;
+	padding: 20px;
+}
+
+#s1 h1, #s1 h2 {
+	color: black;
+	text-align: center;
+}
+#s1 h1 {
+	font-family: Gotham, Arial, "sans-serif";
+	font-size: 3vmax;
+}
+#s1 h2 {
+	font-family: Georgia, "serif";
+	font-size: 2vmax;
+}
+
+#s2 {
+    display: flex;  
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.main {
+	background: white; 
+    text-align: center;
+	padding:30px;
+    flex: 1 100%;
+    width: max-content;
+}
+
+[id^="lbl_"]{
+    height: 60px;
+    width: 60px;
+    padding-top: 4px; 
+    padding-bottom: 30px; 
+    padding-left: 15px;
+    border: 1px solid lightgray; 
+    text-align: center;
+    justify-content: center;
+    color: black;
+    font-size: smaller;
+}
+[id^="txt_"] {
+    width: 50%; 
+    padding-top: 5px; 
+    padding-bottom: 30px; 
+    border: 1px solid lightgray; 
+    margin-right: 0px;  
+    padding-left: 10px
+}
+[id^="btn_"]{
+    height: 51px;
+    width: 60px;
+    padding-top: 4px; 
+    padding-bottom: 30px; 
+    padding-left: 0px;
+    border: 1px solid lightgray; 
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: smaller;
+    background-color: teal;
+}
+
